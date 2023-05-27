@@ -5,8 +5,8 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "server": "node backend/server.js",
-    "client": "concurrently \"npm install --prefix frontendwork\" \"npm start --prefix frontendwork\"",
+    "server": "nodemon backend/server",
+    "client": "npm start --prefix frontendwork",
     "dev": "concurrently \"npm run server\" \"npm run client\" ",
     "data:import": "node backend/seeder.js",
     "data:destroy": "node backend/seeder.js -d"
